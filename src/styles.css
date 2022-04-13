@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+code { margin-left: 10px; margin-right: 10px; }
+
+mat-drawer-content { padding-left: 2rem; padding-right: 2rem; }
+
+.container { margin-left: 5rem; margin-right: 5rem; }
+.section-container { margin-top: 2rem; margin-bottom: 2rem; margin-left: 6rem; margin-right: 6rem; }
+.content-divider { margin-top: 2rem; margin-bottom: 2rem; }
+.main-container { width: 100%; height: 100%; padding-top: 8vh; border: 1px solid #555; }
+.sidebar { width: 12vw; padding-top: 5.9vh; }
+.code-block { margin: 10px; }

@@ -1,0 +1,46 @@
+<div class="content-divider" style="display: flex; font-size: 16px;">
+  <code>&lt;mat-list&gt;</code>
+  <p>is a container component that wraps and formats a series of line items. As the base list component, it provides Material Design styling, but no behavior of its own.</p>
+</div>
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    <mat-card style="width: 40vw; height: 90%;">
+      <div style="margin-bottom: 2rem;">List with sections</div>
+      <mat-list>
+        <div mat-subheader>Folders</div>
+        <mat-list-item *ngFor="let folder of folders">
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <div mat-line>{{folder.name}}</div>
+          <div mat-line> {{folder.updated | date}} </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <div mat-subheader>Notes</div>
+        <mat-list-item *ngFor="let note of notes">
+          <mat-icon mat-list-icon>note</mat-icon>
+          <div mat-line>{{note.name}}</div>
+          <div mat-line> {{note.updated | date}} </div>
+        </mat-list-item>
+      </mat-list>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card style="width: 40vw; height: 90%; ">
+      <mat-tab-group animationDuration="0ms">
+        <mat-tab label="HTML">
+          <div class="code-block" style="overflow: auto; height: 65vh;">
+            <pre>
+              <code>{{html}}</code>
+            </pre>
+          </div>
+        </mat-tab>
+        <mat-tab label="TS">
+          <div class="code-block" style="overflow: auto; height: 65vh;">
+            <pre>
+              <code>{{ts}}</code>
+            </pre>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
